@@ -1,0 +1,10 @@
+@import "./normalize.scss";
+@import "./_variables.scss";
+@import "./mixins.scss";
+@import "./blocks/header.scss";
+
+div {
+  p {
+    color: $main;
+  }
+}
