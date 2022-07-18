@@ -1,10 +1,59 @@
-@import "./normalize.scss";
-@import "./_variables.scss";
-@import "./mixins.scss";
-@import "./blocks/header.scss";
+@use 'sass:map';
 
-div {
-  p {
-    color: $main;
+@import 'vendors';
+@import 'variables';
+@import 'mixins';
+@import 'blocks/blocks';
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+
+  @include media(md) {
+    font-size: 15px;
   }
+
+  @include media(lg) {
+    font-size: 16px;
+  }
+
+  ::selection {
+    background-color: map.get($colors, primary-100);
+    color: map.get($colors, primary-600);
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: map.get($colors, primary-600);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: map.get($colors, primary-100);
+  }
+}
+
+.layout {
+  font-family: 'Mulish', sans-serif;
+  color: map.get($colors, gray-900);
+  line-height: 1.6;
+  font-size: 1rem;
+  overflow-x: hidden;
+  position: relative;
+  min-width: 320px;
+  font-weight: 400;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  flex-grow: 1;
+}
+
+.main {
 }
