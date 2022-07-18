@@ -1,0 +1,9 @@
+@import '../variables';
+@import '../mixins';
+
+.footer {
+  flex-shrink: 0;
+  background-color: #eee;
+  padding: 0.5rem;
+  text-align: center;
+}

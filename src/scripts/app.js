@@ -1,5 +1,3 @@
-import '../styles/app.scss';
-
-(function() {
+(function () {
   // write javascript here
 })();
