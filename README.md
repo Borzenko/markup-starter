@@ -1,4 +1,5 @@
 # Usage
+
 1) Clone it
 ```shell
 git clone https://github.com/Borzenko/markup-starter.git project-name
