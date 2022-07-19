@@ -7,3 +7,13 @@
     @content;
   }
 }
+
+@mixin font-face($name, $style, $weight, $font-file-name) {
+  @font-face {
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: local($name), url('fonts/#{$font-file-name}.woff2') format('woff2'),
+      url('fonts/#{$font-file-name}.woff') format('woff');
+  }
+}
