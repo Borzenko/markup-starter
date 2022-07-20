@@ -1,11 +1,1 @@
-@import 'mixins';
-
-// Packages
 @import '~modern-normalize/modern-normalize';
-
-// Google fonts
-@import 'https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap';
-
-// Custom fonts
-@include font-face('Inter', normal, 400, 'Inter/inter-400');
-@include font-face('Inter', normal, 600, 'Inter/inter-600');
