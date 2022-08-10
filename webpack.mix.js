@@ -2,7 +2,7 @@ const mix = require('laravel-mix');
 require('laravel-mix-nunjucks');
 
 mix
-  .njk('./src/views', 'dist/', {
+  .njk('src/views', 'dist/', {
     manageEnv(nunjucks) {
       nunjucks.addFilter('version', (filename) => {
         return `${filename}?hash=${Date.now()}`;
@@ -10,8 +10,8 @@ mix
     },
   })
   .copyDirectory('src/assets', 'dist')
-  .sass('./src/styles/app.scss', '/')
-  .js('./src/scripts/app.js', '/')
+  .sass('src/styles/app.scss', '/')
+  .js('src/scripts/app.js', '/')
   .options({
     processCssUrls: false,
     sassOptions: {
@@ -33,7 +33,7 @@ if (!mix.inProduction()) {
       proxy: null,
       open: false,
       watch: true,
-      files: ['./src/**/*'],
+      files: ['src/**/*'],
     })
     .disableSuccessNotifications()
     .sourceMaps()
