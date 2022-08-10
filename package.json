@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "mix watch -- --watch-options-poll=1000",
-    "build": "mix --production",
+    "build": "rimraf dist && mix --production",
     "server": "node server.js"
   },
   "repository": {
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "include-media": "^1.4.10",
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "rimraf": "^3.0.2"
   }
 }
