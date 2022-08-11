@@ -23,13 +23,13 @@
   </head>
   <body class="layout layout-default">
     <div class="entry">
-      {% include "_partials/_header.html" %}
+      {% include "_partials/header.html" %}
       <main class="main">
         <div class="hero"></div>
         {% block content %}{% endblock %}
       </main>
     </div>
-    {% include "_partials/_footer.html" %}
+    {% include "_partials/footer.html" %}
     <script src="{{ 'app.js' | version }}"></script>
   </body>
 </html>
