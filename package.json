@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "mix watch -- --watch-options-poll=1000",
-    "build": "rimraf dist && mix --production",
+    "build": "rimraf dist && mix --production && rimraf dist/_partials && rimraf dist/_layouts",
     "server": "node server.js"
   },
   "repository": {

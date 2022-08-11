@@ -6,7 +6,7 @@ on:
       - laravel-mix
 
 jobs:
-  test:
+  test-build:
     strategy:
       matrix:
         platform: [ubuntu-latest, macos-latest, windows-latest]
