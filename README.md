@@ -2,7 +2,7 @@
 
 1) Clone it
 ```shell
-git clone https://github.com/Borzenko/markup-starter.git project-name
+git clone https://github.com/Borzenko/markup-starter.git -b laravel-mix project-name
 cd project-name
 rm -rf .git
 ```
