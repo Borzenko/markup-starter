@@ -1,10 +1,6 @@
-@import "./normalize.scss";
-@import "./_variables.scss";
-@import "./mixins.scss";
-@import "./blocks/header.scss";
+@import 'base/base';
+@import 'blocks/blocks';
+@import 'pages/homepage/sections.scss';
+@import 'components/button.scss';
 
-div {
-  p {
-    color: $main;
-  }
-}
+

@@ -1,0 +1,59 @@
+@use 'sass:map';
+@import '../variables';
+@import '../mixins';
+
+.btn-bg-icon {
+  color: $blue;
+  @include btn-text-16;
+  border-radius: 48px;
+  height: toRem(48);
+  padding: 0 toRem(24);
+
+  span {
+    line-height: 16px;
+  }
+
+  &:visited {
+    color: $blue;
+  }
+
+  &:after {
+    position: relative;
+    margin: auto 0 auto toRem(14);;
+    content: url("assets/images/icons/blue-arrow-right.svg");
+  }
+}
+
+.btn-outline {
+  display: flex;
+  @include btn-all-to-auto;
+  @include btn-text-14;
+  border-radius: 56px;
+  border: 1px solid #000000;
+  height: toRem(48);
+  padding: 0 toRem(24);
+
+  span {
+    line-height: 14px;
+  }
+
+  &:after {
+    position: relative;
+    content: url("assets/images/icons/black-arrow-right.svg");
+    margin: auto 0 auto toRem(14);
+  }
+}
+
+
+.btn-plain {
+  @include btn-text-16;
+  display: inline-flex;
+  color: white;
+  padding: 0 1.5rem;
+  background: $blue;
+  height: toRem(36);
+
+  &:visited {
+    color: white;
+  }
+}

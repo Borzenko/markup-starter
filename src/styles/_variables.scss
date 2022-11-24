@@ -1,3 +1,35 @@
 // app variables
-$main: #000;
-$secondary: #fff;
+$white-64: rgba(255, 255, 255, 0.64);
+$black-15: rgba(0, 0, 0, 0.15);
+$black-56: rgba(0, 0, 0, 0.56);
+$black-48: rgba(0, 0, 0, 0.48);
+$black-64: rgba(0, 0, 0, 0.64);
+$black-90: rgba(0, 0, 0, 0.90);
+$light-blue: #F4F7FF;
+$blue: #2C5AFF;
+$blue-16: rgba(44, 90, 255, 0.16);
+$blue-04: rgba(44, 90, 255, 0.04);
+$green: #30AE53;
+$beige-80: rgba(242, 244, 249, 0.8);
+$red-light: #FF000014;
+$red: #FF0000;
+
+$header-height-mob: 56px;
+$header-height-desc: 72px;
+$container-width: 72rem;
+
+
+
+$breakpoints: (
+        'xs': 320px,
+        'small-phone': 340px,
+        'phone': 375px,
+        'large-phone': 568px,
+        'tablet': 767.98px,
+        'ipad': 1024px,
+        'desktop': 1280px,
+        'large': 1366px,
+        'x-large': 1494px,
+        'widesreen': 1700px,
+);
+

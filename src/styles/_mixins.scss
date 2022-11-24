@@ -1,0 +1,45 @@
+@use 'sass:map';
+@use "sass:math";
+@use "sass:list";
+
+@import '_variables';
+
+@mixin media($breakpoint, $direction: 'min') {
+  @media only screen and (#{$direction}-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// to rem
+@function toRem($value) {
+  $remMiddle: math.div($value, 16);
+  $remValue: $remMiddle + rem;
+@return $remValue;
+}
+
+
+@mixin btn-all-to-auto {
+  display: flex;
+
+  @include media ('large-phone') {
+    display: inline-flex;
+  }
+}
+
+@mixin btn-text-14 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@mixin btn-text-16 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@mixin full-w-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
